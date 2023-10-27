@@ -43,6 +43,9 @@ while True:
             else:
                 cal = factorial(c)
         if op == "sqrt":
-            cal = sqrt(c)
+            if c < 0:
+                 cal = "Error"
+            else:
+                 cal = sqrt(c)
 
     print(cal)
